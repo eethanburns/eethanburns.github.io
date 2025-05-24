@@ -7,11 +7,10 @@
 
 /* Layout & Typography */
 body {
-  font-family: 'Courier New', Courier, monospace;
-  font-weight: bold;
-  letter-spacing: -1px;
+  font-family: Futura,Trebuchet MS,Arial,sans-serif; 
+  letter-spacing: 1px;
   line-height: 1.4;
-  color: #dddddd;
+  color: #aaa;
   background: url('../images/background.png') center repeat;
   background-attachment: fixed;
 }
@@ -36,18 +35,10 @@ header, footer {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
-  
 }
 
 footer {
-  color: #fff;
   letter-spacing: 2px;
-}
-
-.projects {
-  color: #ff9d00;
-  text-align: center;
-  text-decoration: underline;
 }
 
 /* Navigation */
@@ -94,7 +85,7 @@ nav a {
   display: flex;
   gap: 15px;
   padding: 15px;
-  border: 3px solid rgb(175, 175, 175);
+  border: 3px solid #aaa;
   border-radius: 15px;
   background-color: rgba(0, 0, 0, .5);
   transition: background-color 0.2s ease;
@@ -135,14 +126,15 @@ nav a {
 }
 
 .article-header .date {
-  color: #afafaf;
+  color: #aaa;
   font-size: 1em;
   font-weight: bold;
 }
 
 .article-header h2 {
+  color: #dddddd;
   text-decoration: underline;
-  text-decoration-color: #727272;
+  text-decoration-color: #aaa;
   text-decoration-thickness: 3px;
 }
 
