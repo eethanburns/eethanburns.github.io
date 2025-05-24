@@ -8,7 +8,7 @@
 /* Layout & Typography */
 body {
   font-family: Futura,Trebuchet MS,Arial,sans-serif; 
-  letter-spacing: 1px;
+  letter-spacing: .5px;
   line-height: 1.4;
   color: #aaa;
   background: url('../images/background.png') center repeat;
