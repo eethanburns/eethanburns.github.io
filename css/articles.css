@@ -11,7 +11,7 @@ body {
   line-height: 1.6;
   color: #dddddd;
   background: url('../images/background.png') center repeat;
-  background-attachment: scroll;
+  background-attachment: fixed;
   letter-spacing: 1px;
 }
 
@@ -27,6 +27,10 @@ body {
 header, footer {
   text-align: center;
   padding: 10px 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  
 }
 
 footer {
@@ -35,9 +39,13 @@ footer {
 
 main.article-page {
   max-width: 800px;
-  margin: 0 auto;
+  margin: 30px auto 0 auto; /* ✅ top margin added */
   padding: 20px;
+  border: 3px solid rgb(175, 175, 175);
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, .5);
 }
+
 
 /* YouTube Embed – Responsive with styling */
 .article-media {
@@ -78,10 +86,14 @@ main.article-page {
 nav ul {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 90px;
   padding-top: 10px;
+  margin: 0;
+  justify-content: space-between;
+  
 }
+
 
 nav a {
   display: flex;
@@ -90,15 +102,17 @@ nav a {
 }
 
 .nav-icon {
-  height: 60px; /* Adjust this value for text-sized scaling */
+  height: clamp(30px, 10vw, 60px);
   width: auto;
   display: block;
   transition: opacity 0.2s ease;
 }
 
+
 .nav-icon:hover {
   opacity: 0.7;
 }
+
 
 
 
@@ -148,7 +162,6 @@ nav a {
 }
 
 .image-row img {
-  width: calc(50% - 10px); /* Two per row with gap */
   max-width: calc(50% - 10px);
   height: auto;
   border-radius: 10px;
@@ -173,15 +186,25 @@ nav a {
 @media (max-width: 600px) {
   .article-header {
     flex-direction: column;
-    align-items: center;
+    text-align: right;
+  }
+
+  .article-header h1 {
     text-align: center;
   }
 
   .article-body {
-    text-align: center;
+    text-align: left;
   }
-}
 
-.image-row img {
+  .image-row img {
   flex: 1 1 100%; /* Stack vertically on mobile */
+  }
+
+
+  main.article-page {
+    margin-left: 15px;
+    margin-right:15px;
+  }
+
 }
