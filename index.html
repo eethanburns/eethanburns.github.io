@@ -100,6 +100,34 @@
         </div>
       </article>
     </a>
+
+    <form name="email-form" id="email-form">
+      <input type="email" name="email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+    <p id="response"></p>
+
+
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxaHnbYclIgNgrBg4KgG-vQ7x5ZdSlUz5pXXHTIrckHJ6c5VdDwA1hP0rbKCJX30lgD5g/exec';
+      const form = document.forms['email-form'];
+      const response = document.getElementById('response');
+
+      form.addEventListener('submit', e => {
+        e.preventDefault();
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(() => {
+            response.textContent = "✅ Thanks for subscribing!";
+            form.reset();
+          })
+          .catch(error => {
+            response.textContent = "❌ Something went wrong.";
+            console.error('Error!', error.message);
+          });
+      });
+    </script>
+
+
   </main>
 
   <footer>

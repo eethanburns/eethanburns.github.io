@@ -161,6 +161,46 @@ nav a {
 }
 
 
+#email-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin: 20px auto;
+  max-width: 400px;
+}
+
+#email-form input[type="email"] {
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 1rem;
+}
+
+#email-form button {
+  padding: 10px 20px;
+  background-color: #ff9d00;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#email-form button:hover {
+  background-color: #ffaa22;
+}
+
+#response {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+
+
 /* Responsive Layout */
 @media (max-width: 600px) {
 
