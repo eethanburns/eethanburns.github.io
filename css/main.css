@@ -1,3 +1,7 @@
+html, body {
+  overscroll-behavior: none;
+}
+
 .logo {
   display: block;
   width: 100%;
