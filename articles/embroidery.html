@@ -6,6 +6,8 @@
   <title>Embroidery – Ethan Burns</title>
   <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
   <link rel="stylesheet" href="/css/articles.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/email-form.css">
 </head>
 <body>
   <header>
@@ -39,11 +41,11 @@
     <div class="article-media">
       <div class="image-row">
         <img src="../images/embroidery-thumbnail.png">
-        <img src="../images/quickchop-thumbnail.png">        
+        <img src="../images/embroidery-example-1.png">        
       </div>
       <div class="image-row">
-        <img src="../images/michael-mix-2024-thumbnail.jpg">
-        <img src="../images/8-worlds-thumbnail.png">
+        <img src="../images/embroidery-example-2.png" style="image-rendering: pixelated;">
+        <img src="../images/embroidery-example-3.png">
       </div>
     </div>
 
@@ -63,12 +65,19 @@
       <p>-Other options include patches, hats, bags, and pants.</p>
       <p>-Designed, digitized, sampled, and finalized with clear and collaborative communication.</p>
       <p>-Email/message for inquiry, will work to fulfill any request</p>
-      <p style="text-decoration: underline;">mail@eethanburns.com</p>
+      <p style="text-decoration: underline; color: #dddddd; text-decoration-color: #aaa;">mail@eethanburns.com</p>
     </article>
   </main>
 
   <footer>
-    <p>&copy; 2025 Ethan Burns</p>
+    <form name="email-form" id="email-form">
+      <p class="form-text">Join Mailing List:</p>
+      <input type="email" name="email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+    <p id="response"></p>
+    <script src="email-form.js"></script>
+    <p>&copy; 2025 HTML by Ethan Burns</p>
   </footer>
 </body>
 </html>

@@ -6,6 +6,9 @@
   <title>Ethan Burns</title>
   <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
   <link rel="stylesheet" href="/css/homepage.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/email-form.css">
+
 </head>
 
 <body>
@@ -55,7 +58,7 @@
         <div class="article-content">
           <div class="article-header">
             <h2>QuickChop for Chrome</h2>
-            <p class="date">May 19, 2025</p>
+            <p class="date">June 2025</p>
           </div>
           <p>A Chrome extension for rapidly sampling sounds from the web, to replace YouTube to MP3 services.</p>
         </div>
@@ -103,36 +106,13 @@
   </main>
 
   <footer>
-
-
     <form name="email-form" id="email-form">
       <p class="form-text">Join Mailing List:</p>
       <input type="email" name="email" placeholder="Enter your email" required>
       <button type="submit">Subscribe</button>
     </form>
     <p id="response"></p>
-    
-
-    <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbxaHnbYclIgNgrBg4KgG-vQ7x5ZdSlUz5pXXHTIrckHJ6c5VdDwA1hP0rbKCJX30lgD5g/exec';
-      const form = document.forms['email-form'];
-      const response = document.getElementById('response');
-
-        form.addEventListener('submit', e => {
-          e.preventDefault();
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(() => {
-              response.textContent = "Successfully subscribed.";
-              form.reset();
-            })
-            .catch(error => {
-              response.textContent = "❌ Something went wrong.";
-              console.error('Error!', error.message);
-            });
-        });
-    </script>
-
-
+    <script src="email-form.js"></script>
     <p>&copy; 2025 HTML by Ethan Burns</p>
   </footer>
 </body>

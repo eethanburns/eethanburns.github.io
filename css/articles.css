@@ -14,26 +14,6 @@ body {
 }
 
 /* Layout */
-.logo {
-  display: block;
-  width: 100%;
-  max-width: 800px;
-  height: auto;
-  margin: auto;
-}
-
-header, footer {
-  text-align: center;
-  padding: 10px 20px;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  
-}
-
-footer {
-  letter-spacing: 2px;
-}
 
 
 main.article-page {
@@ -82,35 +62,6 @@ main.article-page {
 
 
 /* Navigation */
-nav ul {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding-top: 10px;
-  margin: 0;
-  justify-content: space-between;
-  
-}
-
-
-nav a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.nav-icon {
-  height: clamp(30px, 10vw, 60px);
-  width: auto;
-  display: block;
-  transition: opacity 0.2s ease;
-}
-
-
-.nav-icon:hover {
-  opacity: 0.7;
-}
 
 
 

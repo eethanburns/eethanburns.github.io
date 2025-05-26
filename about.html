@@ -3,9 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>The Michael Mix 2024 – Ethan Burns</title>
+  <title>About – Ethan Burns</title>
   <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
   <link rel="stylesheet" href="/css/articles.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/email-form.css">
 </head>
 <body>
   <header>
@@ -55,7 +57,14 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 Built by Ethan Burns</p>
+    <form name="email-form" id="email-form">
+      <p class="form-text">Join Mailing List:</p>
+      <input type="email" name="email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+    <p id="response"></p>
+    <script src="email-form.js"></script>
+    <p>&copy; 2025 HTML by Ethan Burns</p>
   </footer>
 </body>
 </html>

@@ -3,9 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>()TITLE() – Ethan Burns</title>
+  <title>Best 5-7 Seconds – Ethan Burns</title>
   <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
   <link rel="stylesheet" href="/css/articles.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/email-form.css">
 </head>
 <body>
   <header>
@@ -37,8 +39,8 @@
     <!-- MEDIA SECTION -->
     <div class="article-media">
       <div class="responsive-video">
-        <iframe src="https://www.youtube.com/embed/()YOUTUBE EMBED()"
-                title="()TITLE()"
+        <iframe src="https://www.youtube.com/embed/videoseries?si=VD9uk6elgawUKEXt&amp;list=PLqGob4l-0ZE3tqQ9NBpczB-zKMbE5abW8"
+                title="the best 5-7 seconds of every Kendrick song"
                 frameborder="1"
                 allowfullscreen>
         </iframe>
@@ -48,19 +50,26 @@
 
     <!-- TITLE + DATE -->
     <div class="article-header">
-      <h1>()TITLE()</h1>
-      <p class="date">()DATE()</p>
+      <h1>The Best 5-7 Seconds</h1>
+      <p class="date">2021-2023</p>
     </div>
 
     <!-- BODY CONTENT -->
     <article class="article-body">
-      <p>()BODY()</p>
-      <p>()SECOND PARAGRAPH()</p>
+      <p>Compilations of full artist discographies, in a series of 5-7 second highlights. Series views total over 700k, with peak viewership of 40k in one day.</p>
+      <p>Edited (meticulously) by Ethan Burns.</p>
     </article>
   </main>
 
   <footer>
-    <p>&copy; 2025 Ethan Burns</p>
+    <form name="email-form" id="email-form">
+      <p class="form-text">Join Mailing List:</p>
+      <input type="email" name="email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+    <p id="response"></p>
+    <script src="email-form.js"></script>
+    <p>&copy; 2025 HTML by Ethan Burns</p>
   </footer>
 </body>
 </html>
