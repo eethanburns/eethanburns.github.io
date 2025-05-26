@@ -1,6 +1,13 @@
 html, body {
   overscroll-behavior: none;
+  background-color: #1d176b;
 }
+
+img {
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+}
+
 
 .logo {
   display: block;
