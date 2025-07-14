@@ -1,4 +1,4 @@
-/* Reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -13,12 +13,9 @@ body {
   letter-spacing: 0px;
 }
 
-/* Layout */
-
-
 main.article-page {
   max-width: 800px;
-  margin: 20px auto 20px auto; /* ✅ top margin added */
+  margin: 20px auto 20px auto;
   padding: 20px;
   border: 3px solid #aaa;
   border-radius: 15px;
@@ -26,7 +23,6 @@ main.article-page {
 }
 
 
-/* YouTube Embed – Responsive with styling */
 .article-media {
   width: 100%;
   margin-bottom: 20px;
@@ -35,12 +31,12 @@ main.article-page {
 .responsive-video {
   position: relative;
   width: 100%;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
   border-radius: 20px;
   border: 3px solid #aaa;
-  box-sizing: border-box; /* So border doesn't mess up sizing */
+  box-sizing: border-box;
 }
 
 .responsive-video iframe {
@@ -60,14 +56,6 @@ main.article-page {
   border: 1px solid #aaa;
 }
 
-
-/* Navigation */
-
-
-
-
-
-/* Title + date */
 .article-header {
   display: flex;
   justify-content: space-between;
@@ -99,7 +87,6 @@ main.article-page {
   font-weight: bold;
 }
 
-/* Body content */
 .article-body {
   font-size: clamp(1rem, 1.2vw, 1.25rem);
   line-height: 1.3;
@@ -109,8 +96,6 @@ main.article-page {
   text-align: left;
 }
 
-
-/* Image Rows and Grids */
 .image-row {
   display: flex;
   flex-wrap: wrap;
@@ -129,8 +114,6 @@ main.article-page {
   box-sizing: border-box;
 }
 
-
-/* Optional full-width single image */
 .image-full {
   display: block;
   width: 100%;
@@ -140,7 +123,6 @@ main.article-page {
   object-fit: contain;
 }
 
-/* Responsive */
 @media (max-width: 600px) {
   .article-header {
     flex-direction: column;
