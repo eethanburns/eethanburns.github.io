@@ -1,91 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>QuickChop – Ethan Burns</title>
-  <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
-  <link rel="stylesheet" href="/css/articles.css">
-  <link rel="stylesheet" href="/css/main.css">
-  <link rel="stylesheet" href="/css/email-form.css">
-  <link rel="stylesheet" href="https://use.typekit.net/umd0kia.css">
-  <script src="../pop.js"></script>
-</head>
-<body>
-  <header>
-    <a href="../index.html">
-      <img src="../images/ethan-burns.png" alt="Ethan Burns" class="logo" />
-    </a>
-    <nav>
-      <ul>
-        <li>
-          <a href="../music.html">
-            <img src="../images/music.png" alt="Music" class="nav-icon">
-          </a>
-        </li>
-        <li>
-          <a href="../index.html">
-            <img src="../images/projects.png" alt="Projects" class="nav-icon">
-          </a>
-        </li>
-        <li>
-          <a href="../about.html">
-            <img src="../images/about.png" alt="About" class="nav-icon">
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QuickChop – Ethan Burns</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
+    <link rel="stylesheet" href="/css/articles.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/email-form.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/umd0kia.css" />
+    <script src="../pop.js"></script>
+  </head>
+  <body>
+    <header>
+      <a href="../index.html">
+        <img src="../images/ethan-burns.png" alt="Ethan Burns" class="logo" />
+      </a>
+      <nav>
+        <ul>
+          <li>
+            <a href="../music.html">
+              <img src="../images/music.png" alt="Music" class="nav-icon" />
+            </a>
+          </li>
+          <li>
+            <a href="../index.html">
+              <img
+                src="../images/projects.png"
+                alt="Projects"
+                class="nav-icon"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="../about.html">
+              <img src="../images/about.png" alt="About" class="nav-icon" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-  <main class="article-page">
-
-    <!-- MEDIA SECTION -->
-    <div class="article-media">
-      <div class="image-row">
-        <img src="../images/quickchop-example-4.png">
-        <img src="../images/quickchop-example-1.png">        
+    <main class="article-page">
+      <!-- MEDIA SECTION -->
+      <div class="article-media">
+        <div class="image-row">
+          <img src="../images/quickchop-example-4.png" />
+          <img src="../images/quickchop-example-1.png" />
+        </div>
+        <div class="image-row">
+          <img src="../images/quickchop-example-3.png" />
+          <img src="../images/quickchop-example-2.png" />
+        </div>
       </div>
-      <div class="image-row">
-        <img src="../images/quickchop-example-3.png">
-        <img src="../images/quickchop-example-2.png">
+
+      <!-- TITLE + DATE -->
+      <div class="article-header">
+        <h1>QuickChop for Chrome</h1>
+        <p class="date">June 2025</p>
       </div>
-    </div>
 
+      <!-- BODY CONTENT -->
+      <article class="article-body">
+        <p>
+          A Chrome extension for rapidly sampling sounds from the web, to
+          replace YouTube to MP3 services.
+        </p>
+        <p>
+          -Eliminate the need for clunky and unreliable ‘YouTube to MP3’
+          services.
+        </p>
+        <p>
+          -Use keyboard input from user to slice audio and experiment
+          immediately with sounds.
+        </p>
+        <p>-Make organization of downloaded sounds seamless and convenient.</p>
+        <p>
+          -User Interface window with visual feedback and interactive options.
+        </p>
+        <p></p>
+        <p style="color: #dddddd">
+          Download on the
+          <a
+            href="https://chromewebstore.google.com/detail/quickchop/oefigjpghfpiefemcebeeiimfmboaljd"
+            style="color: #bcbcbc"
+            >Chrome Web Store</a
+          >
+        </p>
+        <p>
+          Join
+          <a href="../mailing.html" style="color: #ddd">mailing list</a> for
+          updates.
+        </p>
+      </article>
+    </main>
 
-        <!-- TITLE + DATE -->
-    <div class="article-header">
-      <h1>QuickChop for Chrome</h1>
-      <p class="date">June 2025</p>
-    </div>
-
-
-
-
-
-
-
-    <!-- BODY CONTENT -->
-    <article class="article-body">
-      <p>A Chrome extension for rapidly sampling sounds from the web, to replace YouTube to MP3 services.</p>
-      <p>-Eliminate the need for clunky and unreliable ‘YouTube to MP3’ services.</p>
-      <p>-Use keyboard input from user to slice audio and experiment immediately with sounds.</p>
-      <p>-Make organization of downloaded sounds seamless and convenient.</p>
-      <p>-User Interface window with visual feedback and interactive options.</p>
-      <p></p>
-      <p style="color:#dddddd">Chrome Web Store release coming June 2025</p>
-      <p>Join <a href="../mailing.html" style="color:#ddd">mailing list</a> for updates.</p>
-    </article>
-  </main>
-
-  <footer>
-    <form name="email-form" id="email-form">
-      <p class="form-text">Join Mailing List:</p>
-      <input type="email" name="email" placeholder="Enter your email" required>
-      <button type="submit">Subscribe</button>
-    </form>
-    <p id="response"></p>
-    <script src="email-form.js"></script>
-    <p>&copy; 2025 HTML by Ethan Burns</p>
-  </footer>
-</body>
+    <footer>
+      <form name="email-form" id="email-form">
+        <p class="form-text">Join Mailing List:</p>
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+        <button type="submit">Subscribe</button>
+      </form>
+      <p id="response"></p>
+      <script src="email-form.js"></script>
+      <p>&copy; 2025 HTML by Ethan Burns</p>
+    </footer>
+  </body>
 </html>
