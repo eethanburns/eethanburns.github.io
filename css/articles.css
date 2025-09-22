@@ -114,6 +114,17 @@ main.article-page {
   box-sizing: border-box;
 }
 
+.image-row .responsive-video {
+  max-width: calc(50% - 10px);
+  padding-bottom: 56.25%;
+  height: 0;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 1px solid #aaa;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
 .image-full {
   display: block;
   width: 100%;
