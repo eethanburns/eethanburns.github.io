@@ -3,10 +3,9 @@ html, body {
 }
 
 img {
-  opacity: 0;
+  opacity: 1; /* Note: Changed from 0 to 1 so unscripted images render immediately */
   transition: opacity 0.3s ease-in;
 }
-
 
 .logo {
   display: block;
@@ -16,7 +15,6 @@ img {
   margin: auto;
   image-rendering: smooth;
 }
-
 
 header, footer {
   text-align: center;
@@ -30,18 +28,14 @@ footer {
   letter-spacing: 2px;
 }
 
-
 nav ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   padding-top: 10px;
   margin: 0;
   justify-content: space-between;
-  
 }
-
 
 nav a {
   display: flex;
@@ -56,12 +50,11 @@ nav a {
   transition: opacity 0.2s ease;
 }
 
-
 .nav-icon:hover {
   opacity: 0.7;
 }
 
-
+/* Instagram Carousel */
 :root {
   --ig-accent: #ff9d00;
   --ig-card-width: 150px;
@@ -127,14 +120,4 @@ nav a {
   width: 32px;
   height: 32px;
   fill: #ffffff;
-}
-
-
-video.article-image {
-  height: auto;
-  display: block;
-  object-fit: cover;
-  border-width: 2px;
-  border-style: solid;
-  /* Retain whatever border-radius exists on your current .article-image */
 }
