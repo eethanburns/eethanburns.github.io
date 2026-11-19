@@ -1,6 +1,11 @@
 const posts = [
   {
     type: 'album',
+    mediaUrl: 'instagram/mini_tote.jpeg',
+    permalink: 'https://www.instagram.com/p/Df6OpKYnJoR/?hl=en&img_index=1'
+  },
+  {
+    type: 'album',
     mediaUrl: 'instagram/cd_collage.jpg',
     permalink: 'https://www.instagram.com/p/DeuQhD8nOXe/?img_index=1'
   },
@@ -8,11 +13,6 @@ const posts = [
     type: 'album',
     mediaUrl: 'instagram/cd_release.jpg',
     permalink: 'https://www.instagram.com/p/DesRDA5nOu8/?img_index=1'
-  },
-  {
-    type: 'image',
-    mediaUrl: 'instagram/album_streaming.jpg',
-    permalink: 'https://www.instagram.com/p/DeioakONn5s/'
   },
   {
     type: 'album',
